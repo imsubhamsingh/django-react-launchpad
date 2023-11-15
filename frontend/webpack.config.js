@@ -12,6 +12,16 @@ module.exports = {
     path: path.resolve(__dirname, '../backend/myapp/static/myapp/build/'),
     filename: '[name].js',
   },
+  // Tell Webpack to use Babel for all JavaScript files, expect for stuff in node_modules.
+  module: {
+    rules: [
+        {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: ['babel-loader'],
+        },
+    ]
+},
   plugins: [
     // Don't output new files if there is an error
     new webpack.NoEmitOnErrorsPlugin(),
