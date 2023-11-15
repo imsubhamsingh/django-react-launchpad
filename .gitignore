@@ -3,3 +3,5 @@ env/
 *.pyc
 *.sqlite3
 migrations
+node_modules
+build/
