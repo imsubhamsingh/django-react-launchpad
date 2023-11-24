@@ -10,6 +10,7 @@ Django-React-Launchpad is a powerful and efficient SaaS starter boilerplate that
 - Pre-configured virtual environment using Poetry
 - Easy setup and deployment
 - Scalable architecture
+- Ruff as a pre-commit hook, an extremely fast Python linter and code formatter,
 
 ## Prerequisites
 
